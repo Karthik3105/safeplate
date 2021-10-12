@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5eeb191f-69ac-4a4e-bf9f-58004dcb4cdd" name="PostgreSQL 13" url="http://localhost">
+        <fileTransfer mountedRoot="C:\Users\admin\Downloads" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
