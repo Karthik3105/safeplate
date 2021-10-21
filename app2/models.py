@@ -14,7 +14,6 @@ class partners(models.Model):
     name = models.CharField(max_length=100)
     buisnessname = models.CharField(max_length=100)
     contactperson1 = models.CharField(max_length=100)
-
     contactemail1 = models.CharField(max_length=100)
     contactperson2 = models.CharField(max_length=100)
     contactdetails2 = models.CharField(max_length=100)
