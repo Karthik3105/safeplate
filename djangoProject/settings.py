@@ -18,6 +18,7 @@ from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 #
 # 'NAME': 'djangodb',
 # 'USER': 'root',
@@ -122,11 +123,17 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'DB1',
+        # 'USER':'postgres',
+        # 'PASSWORD':'postgres',
+        # 'HOST':'localhost',
+
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'DB1',
-        'USER':'postgres',
-        'PASSWORD':'postgres',
-        'HOST':'localhost',
+        'NAME': 'd5fee6cje8t90p',
+        'USER': 'cesejtpecuvehk',
+        'PASSWORD': '66cb04f57afe3ca62a139eb3273df9c62bb314b8327ec1d1012abe2cc1525de0',
+        'HOST': 'ec2-52-200-68-5.compute-1.amazonaws.com',
 
     }
 }
