@@ -158,7 +158,7 @@ body {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .sidebar.collapsed {
@@ -348,9 +348,9 @@ color: #A6A2AD;
 {#  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>#}
     <div style="text-align:center; margin-top: 0px">
     <img id="myapp" src="{% static 'myapp/kk.png' %} " width=120px alt="My image"></div>
-    <a  href="#" style="color:#000000; font-size:12px; margin-top: 20px" >
+    <a href="{% url 'main' %}" style="color:#000000; font-size:12px; margin-top: 20px" >
         <i id="tachometer" class="fa fa-tachometer"></i>
-        <p style="color:#A6A2AD" class="text">DashBoard</p></a>
+        <p  style="color:#A6A2AD" class="text">DashBoard</p></a>
   <a id="comment1" class="dropdown-btn gradient" href="#" style="color:#000000; border-radius: 25px; background-color:#2D42D5; margin-left: 10px; margin-right: 10px; font-size:12px;">
       <i id="comment" class="fa fa-comment-o"></i>
       <i class="fa fa-caret-down text"></i>
@@ -480,7 +480,7 @@ color: #A6A2AD;
 {##}
 {#</div>#}
 
-    <div  id="main" class="ss" style="margin-Left: 280px">
+    <div  id="main" class="ss" style="margin-Left: 230px">
 {#    {% if text == True %}#}
 <div style="margin-top: -15px" class="openbtn">
 {#    <button onclick="myFunction()">Try it</button>#}
@@ -658,7 +658,7 @@ function bigimg(x){
     {
         document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
 
-         if (element.style.marginLeft==="280px" ) {
+         if (element.style.marginLeft==="230px" ) {
 var i;
  var x =document.getElementsByClassName('text');
  for(i=0;i<x.length;i++)
@@ -669,7 +669,7 @@ var i;
  }
 
  {#$('.text').toggle(10);#}
-    element.style.marginLeft="50px";
+    element.style.marginLeft="35px";
 
         comment1.style.marginLeft = "0px";
         comment1.style.marginRight = "0px";
@@ -702,7 +702,7 @@ y.item(j).style.display = "inline-block";
  }
 
  {#$('.text').toggle(10);#}
-      element.style.marginLeft="280px";
+      element.style.marginLeft="230px";
 
       comment1.style.marginLeft = "10px";
         comment1.style.marginRight = "10px";
@@ -741,7 +741,7 @@ for (i = 0; i < dropdown.length; i++) {
   } else {
   {#dropdownContent.style.display = "block";#}
 
-    if ( element.style.marginLeft==="280px" ) {
+    if ( element.style.marginLeft==="230px" ) {
      dropdownContent.style.display = "block";
       console.log("gg1");
  }
@@ -1076,11 +1076,11 @@ function openNav() {
 
 
 
-  if ( element.style.marginLeft==="280px" ) {
+  if ( element.style.marginLeft==="230px" ) {
 
     globalVariable=1;
     {#console.log(globalVariable);#}
-    element.style.marginLeft="50px";
+    element.style.marginLeft="35px";
 
           comment1.style.marginLeft = "0px";
         comment1.style.marginRight = "0px";
@@ -1102,7 +1102,7 @@ function openNav() {
 } else {
        globalVariable=2;
 
-      element.style.marginLeft="280px";
+      element.style.marginLeft="230px";
 
       comment1.style.marginLeft = "10px";
         comment1.style.marginRight = "10px";

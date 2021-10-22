@@ -34,7 +34,7 @@ body {
 
 .sidebar {
   height: 100%;
-  width: 300px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -180,7 +180,7 @@ body {
 {# var text;#}
 <div id="gg"></div>
 <div id="myvideo">
-<div id="mySidebar" onmouseover="mouseOver()" onmouseout="mouseOut()" class="sidebar">
+<div onmouseover="bigimg(this)" onmouseout="bigimg(this)" id="mySidebar" class="sidebar">
 {#  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>#}
     <div style="text-align:center; margin-top: 0px">
 {#          <p contenteditable="true" class="chat_window" style="text-align:left">#}
@@ -270,7 +270,7 @@ body {
 
 
 
-    <div  id="main" class="ss" style="margin-Left: 280px">
+    <div  id="main" class="ss" style="margin-Left: 230px">
 {#    {% if text == True %}#}
 <div style="margin-top: -15px" class="openbtn">
   <button onclick="document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed'); openNav()" id="togglebutton" class="openbtn">☰</button>
@@ -370,18 +370,103 @@ body {
 
 
 <script>
-{#function mouseOver() {#}
-{##}
-{#console.log("Hello world!1");#}
-{#  document.getElementById("demo").style.color = "red";#}
-{#  document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed')#}
 
-{##}
-{#function mouseOut() {#}
-{##}
-{#console.log("Hello world!");#}
-{#  document.getElementById("demo").style.color = "black";#}
-{#  document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed')#}
+    var globalVariable;
+function bigimg(x){
+    {#document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');#}
+
+    var element = document.getElementById("main");
+
+
+{#var element2 =document.getElementsByClassName("ab");#}
+     var element1 = document.getElementById("myDIV");
+  var tachometer = document.getElementById("tachometer");
+    var comment = document.getElementById("comment");
+    var envelope = document.getElementById("envelope");
+    var sitemap = document.getElementById("sitemap");
+    var table = document.getElementById("table");
+    var creditcard = document.getElementById("creditcard");
+    var hdd = document.getElementById("hdd");
+    var wpforms = document.getElementById("wpforms");
+    var myapp = document.getElementById("myapp");
+     var merchant = document.getElementById("merchant");
+
+      var comment1 = document.getElementById("comment1");
+
+    {#console.log(globalVariable);#}
+    if(globalVariable === 1)
+    {
+        document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
+
+         if (element.style.marginLeft==="230px" ) {
+var i;
+ var x =document.getElementsByClassName('text');
+ for(i=0;i<x.length;i++)
+ {
+     x.item(i).style.display = "none";
+{#console.log(x[i]);#}
+     {#x[i].style.display = "none";#}
+ }
+
+ {#$('.text').toggle(10);#}
+    element.style.marginLeft="50px";
+
+        comment1.style.marginLeft = "0px";
+        comment1.style.marginRight = "0px";
+
+        merchant.style.marginLeft="120px";
+
+        tachometer.style.marginLeft = "-15px";
+        comment.style.marginLeft = "-15px";
+        envelope.style.marginLeft = "-15px";
+        sitemap.style.marginLeft = "-15px";
+        table.style.marginLeft = "-15px";
+        creditcard.style.marginLeft = "-15px";
+        hdd.style.marginLeft = "-15px";
+        wpforms.style.marginLeft = "-15px";
+        myapp.style.width = "40px";
+        myapp.style.height = "80px";
+
+
+} else {
+
+var j;
+
+
+
+ var y =document.getElementsByClassName('text');
+ for(j=0;j<y.length;j++)
+ {
+y.item(j).style.display = "inline-block";
+     {#y[j].style.display = "inline-block";#}
+ }
+
+ {#$('.text').toggle(10);#}
+      element.style.marginLeft="230px";
+
+      comment1.style.marginLeft = "10px";
+        comment1.style.marginRight = "10px";
+
+         merchant.style.marginLeft="5px";
+
+         tachometer.style.marginLeft = "0px";
+        comment.style.marginLeft = "0px";
+        envelope.style.marginLeft = "0px";
+        sitemap.style.marginLeft = "0px";
+        table.style.marginLeft = "0px";
+        creditcard.style.marginLeft = "0px";
+        hdd.style.marginLeft = "0px";
+        wpforms.style.marginLeft = "0px";
+        myapp.style.width = "120px";
+
+
+}
+
+        {#openNav();#}
+
+    }
+
+}
 
     var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
@@ -400,7 +485,7 @@ for (i = 0; i < dropdown.length; i++) {
        console.log("f");
 
   {#dropdownContent.style.display = "block";#}
-  if ( element.style.marginLeft==="280px" ) {
+  if ( element.style.marginLeft==="230px" ) {
      dropdownContent.style.display = "block";
  }
  else
@@ -458,7 +543,8 @@ function openNav() {
      var wpforms1 = document.getElementById("wpforms1");
 
 
-    if ( element.style.marginLeft==="280px" ) {
+    if ( element.style.marginLeft==="230px" ) {
+         globalVariable=1;
         tachometer1.style.marginLeft = "0px";
         tachometer1.style.marginRight = "0px";
         {#comment1.style.marginLeft = "0px";#}
@@ -492,7 +578,8 @@ function openNav() {
 
 
 } else {
-        element.style.marginLeft="280px";
+        element.style.marginLeft="230px";
+         globalVariable=2;
 
         tachometer1.style.marginLeft = "10px";
         tachometer1.style.marginRight = "10px";

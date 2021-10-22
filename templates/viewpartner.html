@@ -265,7 +265,7 @@ margin-left: 10px;
 {#  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>#}
     <div style="text-align:center; margin-top: 0px">
     <img id="myapp" src="{% static 'myapp/kk.png' %} " width=120px alt="My image"></div>
-    <a  href="#" style="color:#000000; font-size:12px; margin-top: 20px" >
+    <a href="{% url 'main' %}" style="color:#000000; font-size:12px; margin-top: 20px" >
         <i id="tachometer" class="fa fa-tachometer"></i>
         <p style="color:#A6A2AD" class="text">DashBoard</p></a>
   <a id="comment1" class="dropdown-btn gradient" href="#" style="color:#000000; border-radius: 25px; background-color:#2D42D5; margin-left: 10px; margin-right: 10px; font-size:12px;">
@@ -351,7 +351,7 @@ margin-left: 10px;
 
 
 
-     <div  id="main" class="ss" style="margin-Left: 280px">
+     <div  id="main" class="ss" style="margin-Left: 230px">
 {#    {% if text == True %}#}
 
 <div style="margin-top: -15px" class="openbtn">
@@ -477,7 +477,7 @@ function bigimg(x){
     {
         document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
 
-         if ( element.style.marginLeft==="280px" ) {
+         if ( element.style.marginLeft==="230px" ) {
 var i;
  var x =document.getElementsByClassName('text');
  for(i=0;i<x.length;i++)
@@ -522,7 +522,7 @@ y.item(j).style.display = "inline-block";
  }
 
  {#$('.text').toggle(10);#}
-      element.style.marginLeft="280px";
+      element.style.marginLeft="230px";
  myapp.style.width = "120px";
       comment1.style.marginLeft = "10px";
         comment1.style.marginRight = "10px";
@@ -568,7 +568,7 @@ for (i = 0; i < dropdown.length; i++) {
   dropdownContent.style.display = "none";
   } else {
 
-   if ( element.style.marginLeft==="280px" ) {
+   if ( element.style.marginLeft==="230px" ) {
      dropdownContent.style.display = "block";
  }
  else
@@ -611,7 +611,7 @@ function openNav() {
 
      var comment1 = document.getElementById("comment1");
 
-    if ( element.style.marginLeft==="280px" ) {
+    if ( element.style.marginLeft==="230px" ) {
         globalVariable=1;
          comment1.style.marginLeft = "0px";
         comment1.style.marginRight = "0px";
@@ -634,7 +634,7 @@ function openNav() {
          comment1.style.marginLeft = "10px";
         comment1.style.marginRight = "10px";
 
-    element.style.marginLeft="280px";
+    element.style.marginLeft="230px";
      tachometer.style.marginLeft = "0px";
         comment.style.marginLeft = "0px";
         envelope.style.marginLeft = "0px";

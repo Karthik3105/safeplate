@@ -189,7 +189,7 @@ span > input {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .sidebar.collapsed {
@@ -353,7 +353,7 @@ margin-left: 40px;
 {#  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>#}
     <div style="text-align:center; margin-top: 0px">
     <img id="myapp" src="{% static 'myapp/kk.png' %} " width=120px alt="My image"></div>
-    <a  href="#" style="color:#000000; font-size:12px; margin-top: 20px" >
+    <a href="{% url 'main' %}" style="color:#000000; font-size:12px; margin-top: 20px" >
         <i id="tachometer" class="fa fa-tachometer"></i>
         <p style="color:#A6A2AD" class="text">DashBoard</p></a>
   <a class="dropdown-btn" href="#" style="color:#000000; font-size:12px;  ">
@@ -486,7 +486,7 @@ margin-left: 40px;
 {##}
 {#</div>#}
 
-    <div  id="main" class="ss" style="margin-Left: 280px">
+    <div  id="main" class="ss" style="margin-Left: 230px">
 {#    {% if text == True %}#}
 <div style="margin-top: -15px" class="openbtn">
   <button onclick="document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed'); openNav()" id="togglebutton" class="openbtn" style="margin-Left: 10px;">☰</button>
@@ -670,7 +670,7 @@ function bigimg(x){
     {
         document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
 
-         if ( element.style.marginLeft==="280px" ) {
+         if ( element.style.marginLeft==="230px" ) {
 var i;
  var x =document.getElementsByClassName('text');
  for(i=0;i<x.length;i++)
@@ -681,7 +681,7 @@ var i;
  }
 
  {#$('.text').toggle(10);#}
-    element.style.marginLeft="50px";
+    element.style.marginLeft="35px";
        myapp.style.width = "40px";
         myapp.style.height = "80px";
 
@@ -715,7 +715,7 @@ y.item(j).style.display = "inline-block";
  }
 
  {#$('.text').toggle(10);#}
-      element.style.marginLeft="280px";
+      element.style.marginLeft="230px";
       myapp.style.width = "120px";
 
 
@@ -754,7 +754,7 @@ for (i = 0; i < dropdown.length; i++) {
   if (dropdownContent.style.display === "block") {
   dropdownContent.style.display = "none";
   } else {
-          if ( element.style.marginLeft==="280px" ) {
+          if ( element.style.marginLeft==="230px" ) {
      dropdownContent.style.display = "block";
  }
  else
@@ -1002,10 +1002,10 @@ function openNav() {
     var myapp = document.getElementById("myapp");
      var merchant = document.getElementById("merchant");
 
-     if ( element.style.marginLeft==="280px" ) {
+     if ( element.style.marginLeft==="230px" ) {
          globalVariable=1;
 
-    element.style.marginLeft="50px";
+    element.style.marginLeft="35px";
          sitemap1.style.marginLeft = "0px";
         sitemap1.style.marginRight = "0px";
 
@@ -1024,7 +1024,7 @@ function openNav() {
 } else {
          globalVariable=2;
 
-    element.style.marginLeft="280px";
+    element.style.marginLeft="230px";
      sitemap1.style.marginLeft = "10px";
         sitemap1.style.marginRight = "10px";
 
